@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .form-group {
+        width: 40%;
+        margin: 2.5% auto;
+    }
+</style>
+<body>
+    
+    <form action="/result" method="POST" class="form-group">
+        <h1>Survey Form</h1>
+        <label>Name:</label>
+        <input class="form-control" type="text" name="name">
+        <br>
+        <label>Dojo Location:</label>
+        <select class="form-control" name="location">
+            <option name="mountain_view">Mountain View</option>
+            <option name="seattle">Seattle</option>
+            <option name="dallas">Dallas</option>
+            <option name="chicago">Chicago</option>
+        </select>
+        <br>
+        <label>Favorite Language:</label>
+        <select class="form-control" name="language">
+            <option name="javascript">JavaScript</option>
+            <option name="python">Python</option>
+            <option name="c_sharp">C#</option>
+            <option name="java">Java</option>
+        </select>
+        <br>
+        <label style="vertical-align: top">Comment:</label>
+        <textarea class="form-control" name="comment" id="" cols="30" rows="10"></textarea>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
